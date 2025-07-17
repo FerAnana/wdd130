@@ -32,20 +32,32 @@ main img {
     float: right;
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
     margin: 0, 0, 1rem, 1rem;
 }
 
-aside{
+ul {
+    max-width: 840px; 
+}
+
+aside {
     position: relative;
+    max-width: 840px;
+}
+
+aside p {
+    padding-top: 10px;
+    padding-right: 35px;
 }
 
 aside img {
-    width: 40%;
-    height: auto;
+    height: 250px;
+    width: auto;
 }
 aside h2{
     position: absolute;
-    margin: 10px 0 0 100px
+    margin: 10px 0 0 140px
 }
 
 h1 {
