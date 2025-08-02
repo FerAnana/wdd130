@@ -27,25 +27,50 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
-        <figure>
-            <img src="images/rafting-employee-3.jpg" alt="Fernando Añaña CEO">
-            <figcaption>Sebastián Gómez - CEO</figcaption>
-        </figure>
-        <figure>
-            <img src="images/rafting-employee-4.jpg" alt="Fernando Añaña CEO">
-            <figcaption>Nicole Eseisa - CHRO</figcaption>
-        </figure>
-        </figure>
+        <div class="contact-title">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="main-profiles">
+            <figure>
+                <img src="images/rafting-employee-3.jpg" alt="CEO">
+                <figcaption>Sebastián Gómez - CEO</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting-employee-4.jpg" alt="CHRO">
+                <figcaption>Nicole Eseisa - CHRO</figcaption>
+            </figure>
+        </div>
+        <div class="employees-profiles">
+            <figure>
             <img src="images/rafting-employee-2.jpg" alt="Secretary">
             <figcaption>Emanuel Techera - CEO Secretary</figcaption>
-        </figure>
-        </figure>
-            <img src="images/rafting-employee.jpg" alt="Instructor">
-            <figcaption>Pedro Fidalgo - Instructor</figcaption>
-        </figure>
+            </figure>
+            <figure>
+                <img src="images/rafting-employee.jpg" alt="Instructor">
+                <figcaption>Pedro Fidalgo - Instructor</figcaption>
+            </figure>
+        </div>
         <h2>Send us a Message</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
 
+            <p>What is the purpose of your message?</p>
+            <label for="inquiry">General Inquiry</label>
+            <input type="radio" id="inquiry" name="inquiry">
+            <label for="reservation">Reservation Question</label>
+            <input type="radio" id="reservation" name="reservation">
+            <label for="suggestion">Website Suggestion</label>
+            <input type="radio" id="suggestion" name="suggestion">
+            <label for="message">Tell us</label>
+            <textarea id="message" name="message" placeholder="Write here"></textarea>
+            <label for="subscription">Please subscribe me to the monthly newsletter</label>
+            <input type="checkbox" id="subscription" name="subscription">
+            <label for="submit"></label>
+            <button type="submit" id="submit" name="submit">Send Message</button>
+        </form>
         <p>White Whater Rafting</p>
         <p>Phone: +59891234567</p>
         <p>Email: <a href="emailto">whitewatherraftingfananawdd130@gmail.com</a></p>
