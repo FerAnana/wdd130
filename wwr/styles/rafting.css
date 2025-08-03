@@ -72,7 +72,7 @@ nav, p, section, article {
     padding: 8px;
 }
 
-main h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -182,4 +182,56 @@ footer nav {
     width: 30px;
     height: auto;
     margin: 0 3px 0 3px;
+}
+
+.c-header h1 {
+    text-align: center;
+    position: relative;
+    color:var(--primary-color);
+    font-size: 225%;
+    margin: 2.5rem 0 1rem;
+}
+
+.employees-profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 3rem;
+}
+
+.ceo, .ceo img{
+    grid-column: 1/2;
+    width: 300px;
+    height: 442px;
+    margin: 5px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.risk, .risk img {
+    grid-column: 2/3;
+    width: 250px;
+    height: 442px;
+    margin: 5px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.instructor, .instructor img {
+    grid-column: 3/4;
+    height: 442px;
+    width: 250px;
+    margin: 5px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.form-map {
+    display: grid;
+    max-width: fit-content;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(209, 231, 250);
+    border: 2px solid black;
 }
