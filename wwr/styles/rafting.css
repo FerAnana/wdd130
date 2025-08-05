@@ -240,7 +240,6 @@ footer nav {
     text-align: left;
     border-radius: 7px;
     grid-template-columns: 1fr 1fr;
-    background-color: beige;
 }
 
 .form-map h2{
@@ -258,26 +257,31 @@ footer nav {
 }
 
 label {
-    text-align: left;
+    text-align: center;
     padding: 4px 10px;
 }
 
 .formname input, .formemail input {
-    margin: 10px 10px 10px 0;
+    margin: 10px 0 10px 0;
     padding: 2px;
     width: 440px;
     font-size: small;
 }
 
-.form p {
-    text-align: center;
-    flex-direction: column;
+.formradio p {
+    display: block;
+    font-weight: 500;
+    font-size: large;
 }
 
 .formradio {
-    display: flex;
-    flex-wrap:nowrap;
-    flex-direction: row;
+    display: grid;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form input {
+    align-items: end;
 }
 
 textarea {
@@ -288,7 +292,24 @@ textarea {
     font-size: medium;
 }
 
+button {
+    width: 170px;
+    height: 50px;
+    padding: .6rem;
+    margin: 30px 0; 
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: medium;
+    
+    
+}
+
+button:hover {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
 .phone, .map {
     grid-column: 2/3;
-    background-color: aquamarine;
 }
