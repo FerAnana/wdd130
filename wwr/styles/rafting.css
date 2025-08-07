@@ -73,6 +73,8 @@ nav, p, section, article {
     padding: 8px;
 }
 
+/* About us CSS */
+
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -194,6 +196,8 @@ footer nav {
     height: auto;
     margin: 0 3px 0 3px;
 }
+
+/*Contact us CSS*/
 
 .c-header h1 {
     text-align: center;
@@ -387,6 +391,8 @@ button:hover {
     font-size: medium;
 }
 
+/* Home CSS */
+
 .homehero h1 {
     position: absolute;
     top: 50px;
@@ -403,7 +409,127 @@ button:hover {
 }
 
 .homehero img {
+    position: absolute;
     display: block;
     width: 100%;
     height: auto;
+}
+
+.newsletter {
+    position: relative;
+    top: 175px;
+    display: grid;
+    justify-content: center;
+}
+
+.home-form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 2rem 0 2rem 0;
+    width: 400px;
+    max-height: 600px;
+    background-color: #d5f7ff;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.home-name {
+    grid-row: 1/2;
+    align-self: center;
+    margin-top: .5rem;
+}
+
+.home-name input {
+    margin: 0;
+    width: 250px;
+    padding: 0 0 3px 3px;
+    font-size: medium;
+}
+
+.home-email {
+    grid-row: 2/3;
+    align-self: center;
+    margin-top: .5rem 0 0 0;
+}
+
+.home-email input {
+    margin: 0;
+    width: 250px;
+    padding: 0 0 3px 3px;
+    font-size: medium;
+}
+
+.home-checkbox {
+    grid-row: 3/4;
+    margin-top: .5rem;
+}
+
+.home-checkbox input {
+    width: 20px;
+}
+
+.home-button {
+    grid-row: 4/5;
+    align-self: flex-start;
+    margin-bottom: .5rem;
+}
+.home-button button {
+    width: 150px;
+    height: 30px;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+}
+
+.home-button button:hover {
+    font-weight: bold;
+    background-color: #ffe7ae;
+}
+
+.content {
+    position: relative;
+    top: 250px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.content figcaption {
+    color: var(--accent1-color);
+}
+
+.to-contact {
+    grid-column: 1/2;
+    justify-items: center;
+}
+
+.to-contact img {
+    width: 300px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ffe7ae;
+}
+
+
+.to-about img {
+    width: 300px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ffe7ae;
+}
+
+
+.to-trips img {
+    width: 300px;
+    height: 300px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ffe7ae;
 }
