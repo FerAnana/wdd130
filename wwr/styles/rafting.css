@@ -43,7 +43,7 @@ nav li{
 nav a {
     display: block;
     padding-left: 10px;
-    color: #FFF;
+    color: var(--accent2-color);
     text-decoration: none;
 }
 
@@ -165,18 +165,28 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: solid black 2px;
+    background-color: var(--primary-color);
 }
 
 footer p {
-    grid-column: 1/3;
+    grid-column: 1/2;
     place-self: center;
+    color: var(--accent2-color);
+}
+
+.wireframe {
+    grid-column: 2/3;
+}
+
+.wireframe a {
+    color: #ffeaba;
 }
 
 footer nav {
     grid-column: 3/4;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 .socialmedia img, a{
@@ -234,82 +244,166 @@ footer nav {
 
 .form-map {
     display: grid;
-    width: 1000px;
-    height: auto;
-    margin: 100px auto 2rem;
-    text-align: left;
-    border-radius: 7px;
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
-.form-map h2{
-    text-align: center;
-    margin: 5px 0 30px 0;
-}
-
-.form {
+form {
     display: grid;
-    margin: 20px 30px;
-    grid-column: 1/2;
+    margin: 2rem 0 2rem 0;
+    width: 400px;
+    max-height: 600px;
+    grid-template-rows: 55px 40px 40px 1fr 1fr 30px 45px;
+    background-color: #d5f7ff;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: var(--accent2-color);
+    justify-items: center;
 }
 
-label {
-    text-align: center;
-    padding: 4px 10px;
+form h2 {
+    grid-row: 1/2;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
-.formname input, .formemail input {
-    margin: 10px 0 10px 0;
-    padding: 2px;
-    width: 440px;
-    font-size: small;
+.contact-name {
+    grid-row: 2/3;
+    align-self: flex-start;
 }
 
-.formradio p {
-    display: block;
-    font-weight: 500;
+.contact-name input {
+    width: 350px;
+    padding: 0 0 3px 3px;
+    font-size: medium;
+}
+
+.contact-email {
+    grid-row: 3/4;
+    align-self: flex-start;
+}
+
+.contact-email input {
+    width: 350px;
+    padding: 0 0 3px 3px;
+    font-size: medium;
+}
+
+.contact-radio {
+    grid-row: 4/5;
+    width: 350px;
+    align-self: flex-start;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.contact-radio p {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.radio1, .radio2, .radio3 {
+    margin: 0 0 .5rem;
+    justify-self: center;
+    align-self: center;
+    font-size: .8rem;
+
+}
+
+.contact-message {
+    align-self: center;
+    justify-content: center;
+}
+
+.contact-message textarea {
+    width: 350px;
+    height: 100px;
+    padding: 0 0 3px 3px;
     font-size: large;
 }
 
-.formradio {
-    display: grid;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.form input {
-    align-items: end;
-}
-
-textarea {
-    margin: 10px 10px 10px 1.2rem;
-    padding: 2px;
-    width: 440px;
-    height: 150px;
+.contact-checkbox {
+    align-self: flex-start;
     font-size: medium;
 }
 
-button {
-    width: 170px;
-    height: 50px;
-    padding: .6rem;
-    margin: 30px 0; 
-    border: none;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-size: medium;
-    
-    
+.contact-checkbox label {
+    font-size: 15px;
+}
+
+.contact-checkbox input {
+    margin: 0 5px;
+}
+
+.contact-button {
+    align-self: flex-start;
+}
+
+.contact-button button {
+    width: 350px;
+    height: 30px;
+    background-color: var(--accent2-color);
+    border-radius: 10px;
 }
 
 button:hover {
-    color: var(--secondary-color);
     font-weight: bold;
+    background-color: #ffe7ae;
 }
-.phone, .map {
-    grid-column: 2/3;
+
+
+.com-info {
+    display: grid;
+    justify-content: center;
+}
+
+.map h2 {
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.map {
+    justify-self: center;
+}
+
+.map iframe {
+    border: 1px solid black;
+}
+
+.phone h3 {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 100;
+    font-size: larger;
+}
+
+.phone p {
+    margin: 0;
+    font-size: medium;
+}
+
+.homehero h1 {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    color: #FFF;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.homehero {
+    position: relative;
+}
+
+.homehero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
