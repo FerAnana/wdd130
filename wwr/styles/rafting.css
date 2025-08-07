@@ -249,7 +249,7 @@ footer nav {
     justify-items: center;
 }
 
-form {
+.contact-form {
     display: grid;
     margin: 2rem 0 2rem 0;
     width: 400px;
