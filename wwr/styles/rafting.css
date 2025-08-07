@@ -59,7 +59,7 @@ body {
 
 header, main, footer {
     width: 1000px;
-    
+    height: fit-content;
     margin: 0 auto 5px;
 }
 
@@ -394,7 +394,7 @@ button:hover {
 /* Home CSS */
 
 .homehero h1 {
-    position: absolute;
+    position: relative;
     top: 50px;
     width: 100%;
     padding: 16px;
@@ -402,6 +402,7 @@ button:hover {
     color: #FFF;
     font-size: 50px;
     font-style: italic;
+    z-index: 1;
 }
 
 .homehero {
@@ -417,9 +418,9 @@ button:hover {
 
 .newsletter {
     position: relative;
-    top: 175px;
     display: grid;
     justify-content: center;
+    z-index: 1;
 }
 
 .home-form {
@@ -428,8 +429,6 @@ button:hover {
     margin: 2rem 0 2rem 0;
     width: 400px;
     max-height: 600px;
-    background-color: #d5f7ff;
-    border: 1px solid black;
     border-radius: 10px;
     justify-items: center;
 }
@@ -463,6 +462,10 @@ button:hover {
 .home-checkbox {
     grid-row: 3/4;
     margin-top: .5rem;
+    background-color: #ffeaba;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .home-checkbox input {
@@ -472,7 +475,7 @@ button:hover {
 .home-button {
     grid-row: 4/5;
     align-self: flex-start;
-    margin-bottom: .5rem;
+    margin: .5rem 0;
 }
 .home-button button {
     width: 150px;
@@ -488,7 +491,7 @@ button:hover {
 
 .content {
     position: relative;
-    top: 250px;
+    top: 200px;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -496,10 +499,12 @@ button:hover {
     text-align: center;
     font-size: larger;
     font-weight: bold;
+    z-index: 1;
 }
 
 .content figcaption {
     color: var(--accent1-color);
+    font-size: larger;
 }
 
 .to-contact {
@@ -515,6 +520,11 @@ button:hover {
     background-color: #ffe7ae;
 }
 
+.to-contact p img {
+    width: 50px;
+    height: 50px;
+}
+
 
 .to-about img {
     width: 300px;
@@ -524,6 +534,10 @@ button:hover {
     background-color: #ffe7ae;
 }
 
+.to-about p img {
+    width: 50px;
+    height: 50px;
+}
 
 .to-trips img {
     width: 300px;
@@ -532,4 +546,42 @@ button:hover {
     border: 1px solid black;
     border-radius: 5px;
     background-color: #ffe7ae;
+}
+
+.to-trips p img {
+    width: 50px;
+    height: 50px;
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: 650px 350px;
+    position: relative;
+    top: 250px;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 350px;
+    background-color: #ffefcb;
+    z-index: 1;
+}
+
+.offer img {
+    height: 350px;
+    position: relative;
+    top: 12%;
+    left: 75px;
+}
+
+.offer article {
+    position: relative;
+    right: 200px;
+    top: 25%;
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #ffe097;
+    text-align: center;
+    font-size: medium;
+    z-index: 1;
 }
