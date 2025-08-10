@@ -584,3 +584,130 @@ button:hover {
     font-size: medium;
     z-index: 1;
 }
+
+/* Trips CSS */
+
+.trip-1, .trip-3 {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    background-color: #d5f7ff;
+    border: 2px solid black;
+}
+
+.trip-1 h1, .trip-3 h1{
+    grid-column: 2/3;
+    position: relative;
+    top: 60px;
+    justify-self: center;
+    font-size: xx-large;
+}
+
+.trip-1 img, .trip-3 img {
+    width: 450px;
+    height: auto;
+    grid-column: 1/2;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0 0 2.2rem 1rem;
+}
+
+.trip-1 p, .trip-3 p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    background-color: #d5f7ff;
+    text-align: justify;
+    color: black;
+    font-size: larger;
+}
+
+.trip-2 {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    background-color: #d5f7ff;
+    border: 2px solid black;
+}
+
+.trip-2 h1{
+    grid-column: 1/2;
+    position: relative;
+    top: 60px;
+    justify-self: center;
+    font-size: xx-large;
+}
+
+.trip-2 img{
+    width: 450px;
+    height: auto;
+    grid-column: 2/3;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0 0 2.2rem 1rem;
+}
+
+.trip-2 p {
+    grid-column: 1/2;
+    align-self: center;
+    background-color: #d5f7ff;
+    text-align: justify;
+    color: black;
+    font-size: larger;
+}
+
+.reserve, .reserve h1, .reserve a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 60px;
+    padding: 35px;
+    margin: 3rem 0;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  font-size: medium;
+  letter-spacing: 1px;
+}
+
+table img {
+    width: 300px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: #d5f7ff;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px 10px;
+}
+
+td {
+  text-align: justify;
+}
+
+tbody {
+  background-color: #FFF1D0;
+}
+
+table h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
